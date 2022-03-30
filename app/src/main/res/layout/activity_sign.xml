@@ -13,9 +13,11 @@
         android:layout_height="wrap_content"
         android:text="@string/Heading1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:fontFamily="@font/opensans_extrabold"
+        android:textColor="@color/black"
 
         />
 
@@ -27,7 +29,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="@string/Heading2"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="@font/sans_font"/>
 
     <EditText
         android:id="@+id/etSignIn"
@@ -37,8 +41,13 @@
         android:layout_marginTop="35dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
         android:hint="@string/email"
+        android:drawableStart="@drawable/ic_email"
         android:autoSizeTextType="uniform"
+        android:fontFamily="@font/sans_font"
+        android:inputType="text"
+        android:lines="1"
         />
 
 
@@ -50,9 +59,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
         android:hint="@string/password"
+        android:drawableStart="@drawable/ic_lock"
+        android:fontFamily="@font/sans_font"
+        android:inputType="textPassword"
         android:lines="1"
-
         />
 
     <TextView
@@ -68,7 +80,7 @@
         />
 
     <Button
-        android:id="@+id/btnIsgnIn"
+        android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtrecoverPassword"
@@ -76,10 +88,29 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:text="@string/signIn"
-        android:backgroundTint="@color/blueGray"
+        android:backgroundTint="@color/SignIn"
+        android:fontFamily="@font/sans_font"
         />
 
+    <TextView
+        android:id="@+id/txtOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OR"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/sans_font"
+        />
 
-
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOR"
+        android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>

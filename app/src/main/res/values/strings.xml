@@ -18,6 +18,7 @@
     <string name="password">Enter password</string>
     <string name="recoverPassword">Recover Password</string>
     <string name="signIn">Sign IN</string>
+    <string name="OR">or continue with</string>
 
 
 </resources>
