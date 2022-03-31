@@ -12,13 +12,14 @@
 
     <!--  Sign in resources  -->
 
-    <string name="Heading1">Hello Again!</string>
-    <string name="Heading2">Welcome back you\'re \n been missed!</string>
+    <string name="Heading1">CT Students</string>
+    <string name="Heading2">Community</string>
     <string name="email">Enter username</string>
     <string name="password">Enter password</string>
     <string name="recoverPassword">Recover Password</string>
     <string name="signIn">Sign IN</string>
     <string name="OR">or continue with</string>
+    <string name="Register">Not a mamber? Register now</string>
 
 
 </resources>

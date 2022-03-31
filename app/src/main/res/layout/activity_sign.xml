@@ -11,38 +11,48 @@
         android:id="@+id/txtHeading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Heading1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:text="@string/Heading1"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:fontFamily="@font/opensans_extrabold"
-        android:textColor="@color/black"
 
         />
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_logo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtHeading1"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/txtHeading2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHeading1"
+        android:layout_below="@+id/imgLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/Heading2"
-        android:textSize="20sp"
+        android:fontFamily="@font/sans_font"
         android:gravity="center"
-        android:fontFamily="@font/sans_font"/>
+        android:text="@string/Heading2"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtHeading2"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:drawablePadding="10dp"
         android:hint="@string/email"
+        android:padding="10dp"
+        android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_email"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/sans_font"
@@ -60,6 +70,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:padding="10dp"
         android:hint="@string/password"
         android:drawableStart="@drawable/ic_lock"
         android:fontFamily="@font/sans_font"
@@ -68,22 +80,21 @@
         />
 
     <TextView
-        android:id="@+id/txtrecoverPassword"
+        android:id="@+id/txtRecoverPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:text="@string/recoverPassword"
-        android:layout_marginTop="15dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtrecoverPassword"
+        android:layout_below="@+id/txtRecoverPassword"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
@@ -96,21 +107,35 @@
         android:id="@+id/txtOR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/OR"
         android:layout_below="@+id/btnSignIn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:textSize="16sp"
         android:fontFamily="@font/sans_font"
+        android:text="@string/OR"
+        android:textSize="16sp"
         />
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/btnGoogleSignIn"
+        android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtOR"
-        android:layout_marginTop="29dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/sans_font"
         />
 
 </RelativeLayout>
