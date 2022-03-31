@@ -19,7 +19,14 @@
     <string name="recoverPassword">Recover Password</string>
     <string name="signIn">Sign IN</string>
     <string name="OR">or continue with</string>
-    <string name="Register">Not a mamber? Register now</string>
+    <string name="Register">Not a member? Register now</string>
+    
+    <!--  menu drawer names  -->
+    
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="faq">FAQ\'s</string>
+    <string name="rateUs">Rate Us</string>
 
 
 </resources>
