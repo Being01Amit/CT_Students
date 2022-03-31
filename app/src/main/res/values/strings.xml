@@ -11,7 +11,6 @@
     <string name="login_failed">"Login failed"</string>
 
     <!--  Sign in resources  -->
-
     <string name="Heading1">CT Students</string>
     <string name="Heading2">Community</string>
     <string name="email">Enter username</string>
@@ -22,8 +21,6 @@
     <string name="Register">Not a member? Register now</string>
     
     <!--  menu drawer names  -->
-    
-    <string name="dashboard">Dashboard</string>
     <string name="profile">Profile</string>
     <string name="faq">FAQ\'s</string>
     <string name="rateUs">Rate Us</string>
