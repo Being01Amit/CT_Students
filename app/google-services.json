@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531650521291",
+    "project_id": "ct-studens",
+    "storage_bucket": "ct-studens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531650521291:android:7d04c4030d9b550c65134e",
+        "android_client_info": {
+          "package_name": "com.example.ctstudents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531650521291-d9b2petii9jo0ppnq0rm8urmi074a5v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKPt7-wurLtWINUhIYcoYeo4wW790jbG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531650521291-d9b2petii9jo0ppnq0rm8urmi074a5v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
