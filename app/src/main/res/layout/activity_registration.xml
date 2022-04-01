@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/txtRegisterYourSelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:text="@string/registerYourSelf"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgLogoRegister"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtRegisterYourSelf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_logo" />
+
+
+    <EditText
+        android:id="@+id/etSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoRegister"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/sans_font"
+        android:hint="@string/enterName"
+        android:inputType="text"
+        android:lines="1"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etEmailPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSignUp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_phone_number"
+        android:drawablePadding="10dp"
+        android:hint="@string/email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmailPhoneNumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/sans_font"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Register"
+        android:backgroundTint="@color/blueGray"
+        />
+
+</RelativeLayout>

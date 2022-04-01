@@ -13,17 +13,28 @@
     <!--  Sign in resources  -->
     <string name="Heading1">CT Students</string>
     <string name="Heading2">Community</string>
-    <string name="email">Enter username</string>
+    <string name="email">Enter Email</string>
     <string name="password">Enter password</string>
     <string name="recoverPassword">Recover Password</string>
     <string name="signIn">Sign IN</string>
     <string name="OR">or continue with</string>
-    <string name="Register">Not a member? Register now</string>
-    
+    <string name="RegisterYourrself">Not a member? Register now</string>
+
     <!--  menu drawer names  -->
     <string name="profile">Profile</string>
     <string name="faq">FAQ\'s</string>
     <string name="rateUs">Rate Us</string>
+
+<!--  Registration Page  -->
+
+    <string name="registerYourSelf">Register Yourself!</string>
+    <string name="enterName">Enter your full name</string>
+    <string name="Register">Register now</string>
+
+<!--  Recover Password -->
+
+    <string name="recoverpassword">Recover your password</string>
+    <string name="recover">Recover</string>
 
 
 </resources>
