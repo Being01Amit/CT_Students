@@ -4,30 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignActivity"
-    android:background="#80FFFFFF">
+    android:background="#80FFFFFF"
+    tools:context=".SignActivity">
 
     <TextView
         android:id="@+id/txtHeading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/opensans_extrabold"
         android:text="@string/Heading1"
-        android:layout_marginTop="30dp"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
 
         />
+
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_logo"
-        android:layout_marginTop="10dp"
         android:layout_below="@+id/txtHeading1"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_logo" />
 
     <TextView
         android:id="@+id/txtHeading2"
@@ -65,18 +66,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etSignIn"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:drawablePadding="10dp"
         android:background="@drawable/custom_input"
-        android:padding="10dp"
-        android:hint="@string/password"
         android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/sans_font"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:lines="1"
-        />
+        android:padding="10dp" />
 
     <TextView
         android:id="@+id/txtRecoverPassword"
@@ -86,7 +86,9 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="@font/opensans_extrabold"
         android:text="@string/recoverPassword"
+        android:textColor="@color/mainThemeDark"
         android:textStyle="bold" />
 
     <Button
@@ -94,13 +96,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtRecoverPassword"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="@string/signIn"
         android:backgroundTint="@color/SignIn"
         android:fontFamily="@font/sans_font"
-        />
+        android:text="@string/signIn" />
 
     <TextView
         android:id="@+id/txtOR"
@@ -111,8 +112,7 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/sans_font"
         android:text="@string/OR"
-        android:textSize="16sp"
-        />
+        android:textSize="16sp" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
@@ -120,21 +120,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtOR"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_marginTop="20dp" />
 
 
     <TextView
         android:id="@+id/txtRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Register"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:textSize="16sp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/sans_font"
-        />
+        android:text="@string/Register"
+        android:textSize="16sp" />
 
 </RelativeLayout>
