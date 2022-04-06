@@ -22,19 +22,27 @@
 
     <!--  menu drawer names  -->
     <string name="profile">Profile</string>
-    <string name="faq">FAQ\'s</string>
-    <string name="rateUs">Rate Us</string>
+    <string name="home">Home</string>
+    <string name="reminder">Reminder</string>
+    <string name="feed">Feed</string>
 
-<!--  Registration Page  -->
+    <!--  Registration Page  -->
 
     <string name="registerYourSelf">Register Yourself!</string>
     <string name="enterName">Enter your full name</string>
     <string name="Register">Register now</string>
 
-<!--  Recover Password -->
+    <!--  Recover Password -->
 
     <string name="recoverpassword">Recover your password</string>
     <string name="recover">Recover</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bottom1">Bottom1</string>
 
 
 </resources>

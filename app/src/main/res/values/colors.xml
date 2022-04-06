@@ -19,4 +19,13 @@
     <color name="blueGray">#455a64</color>
     <color name="transparent">#FCFDFE</color>
     <color name="SignIn">#000a12</color>
+
+<!--  Fragments Colors  -->
+
+    <color name="SkyBlue">#4fc3f7</color>
+    <color name="charyRed">#ef5350</color>
+    <color name="lightpurple">#ab47bc</color>
+    <color name="yellowShade">#ffd740</color>
+
+
 </resources>

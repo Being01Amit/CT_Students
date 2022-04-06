@@ -1,7 +1,5 @@
 package com.example.ctstudents
 
-import MainActivity
-
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +12,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
@@ -34,6 +33,7 @@ class SignInActivity : AppCompatActivity() {
     lateinit var email: EditText
     lateinit var password: EditText
     private var mGoogleSignInClient: GoogleSignInClient? = null
+
 
     private lateinit var googleLogin: Button
 
@@ -63,6 +63,7 @@ class SignInActivity : AppCompatActivity() {
 
 
 //        Sign in with email password section
+
 
         googleLogin = findViewById(R.id.sign_in_button)
         email = findViewById(R.id.etSignIn)
