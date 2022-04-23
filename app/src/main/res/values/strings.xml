@@ -45,4 +45,12 @@
     <string name="title_activity_bottom1">Bottom1</string>
 
 
+<!--  Home Fragment Strings  -->
+    <string name="attendance">Attendance</string>
+    <string name="cgpa">CGPA</string>
+    <string name="assignments">Assignments</string>
+    <string name="notes">Notes</string>
+<!--        <string name="default_web_client_id">531650521291-5p99de8hj7ca2kfksoplf1a66c4t1r6s.apps.googleusercontent.com</string>-->
+
+
 </resources>

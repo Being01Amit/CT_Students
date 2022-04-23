@@ -27,5 +27,8 @@
     <color name="lightpurple">#ab47bc</color>
     <color name="yellowShade">#ffd740</color>
 
+<!--   Home Fragment Colors -->
+    <color name="backgourdBlack">#001E3C</color>
+
 
 </resources>
