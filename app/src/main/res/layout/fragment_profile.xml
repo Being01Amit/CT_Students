@@ -3,18 +3,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Profile.ProfileFragment"
-    android:background="@color/lightpurple"
-    >
+    android:background="@color/BackGroundgray"
+    tools:context=".ui.Profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgProfileLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/icon_profile" />
 
     <TextView
-        android:id="@+id/Fragment_Profile"
-        android:layout_width="match_parent"
+        android:id="@+id/txtStudentName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Profile"
-        android:textAlignment="center"
-        android:textSize="30sp"
+        android:layout_below="@+id/imgProfileLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/StudentName"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtStudyProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStudentName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/StudyProgram"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
         />
+
+    <TextView
+        android:id="@+id/txtUnversityNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStudyProgram"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/UniversityRollNo"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStudyProgram"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/PhoneNo"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUnversityNo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/Department"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtDegreeYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDepartment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/DegreeYear"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtStudentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDegreeYear"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/StudentEmail"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 </RelativeLayout>

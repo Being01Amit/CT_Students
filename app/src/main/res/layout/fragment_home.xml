@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackGroundgray"
     tools:context=".ui.Home.Home">
 
 
@@ -24,58 +25,72 @@
         android:backgroundTint="@color/black"
         android:backgroundTintMode="screen" />
 
-    <Button
-        android:id="@+id/btnattendance"
+    <TextView
+        android:id="@+id/txtAttendence"
         android:layout_width="180dp"
         android:layout_height="160dp"
         android:layout_below="@+id/tlThinLine"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_corner"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/charyRed"
         android:fontFamily="@font/sans_font"
         android:gravity="bottom"
+        android:padding="20dp"
         android:paddingBottom="10dp"
         android:text="@string/attendance"
-        android:textSize="16sp" />
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:autoSizeMaxTextSize="80sp"
+        android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/btnAssignment"
+    <TextView
+        android:id="@+id/txtAssignments"
         android:layout_width="180dp"
-        android:layout_height="220dp"
+        android:layout_height="280dp"
         android:layout_below="@+id/tlThinLine"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/round_corner"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/DarkBlue"
         android:fontFamily="@font/sans_font"
         android:gravity="bottom"
+        android:padding="20dp"
         android:paddingBottom="10dp"
         android:text="@string/assignments"
-        android:textSize="16sp" />
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:autoSizeMaxTextSize="80sp"
+        android:textStyle="bold"
+        />
 
 
-    <Button
-        android:id="@+id/btnNotes"
+    <TextView
+        android:id="@+id/txtNotes"
         android:layout_width="180dp"
-        android:layout_height="220dp"
-        android:layout_below="@+id/btnattendance"
+        android:layout_height="280dp"
+        android:layout_below="@+id/txtAttendence"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/sans_font"
         android:gravity="bottom"
+        android:padding="20dp"
         android:paddingBottom="10dp"
         android:text="@string/notes"
-        android:textSize="16sp" />
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:autoSizeMaxTextSize="80sp"
+        android:textStyle="bold"
+        />
 
-    <Button
-        android:id="@+id/btnCGPA"
+    <TextView
+        android:id="@+id/txtCGPA"
         android:layout_width="180dp"
         android:layout_height="160dp"
-        android:layout_below="@+id/btnAssignment"
+        android:layout_below="@+id/txtAssignments"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
@@ -83,9 +98,14 @@
         android:backgroundTint="@color/black"
         android:fontFamily="@font/sans_font"
         android:gravity="bottom"
+        android:padding="20dp"
         android:paddingBottom="10dp"
         android:text="@string/cgpa"
-        android:textSize="16sp" />
+        android:autoSizeMaxTextSize="80sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
 
 
 </RelativeLayout>

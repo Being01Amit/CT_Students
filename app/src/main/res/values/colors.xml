@@ -28,7 +28,9 @@
     <color name="yellowShade">#ffd740</color>
 
 <!--   Home Fragment Colors -->
-    <color name="backgourdBlack">#001E3C</color>
+    <color name="BackGroundgray">#424242</color>
+    <color name="DarkBlue">#001E3C</color>
+
 
 
 </resources>
