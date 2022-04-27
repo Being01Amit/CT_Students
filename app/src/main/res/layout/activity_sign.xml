@@ -48,7 +48,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
-        android:autoSizeTextType="uniform"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="10dp"
@@ -114,12 +113,16 @@
 
     <Button
         android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtOR"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        />
+        android:backgroundTint="@color/white"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="@string/SignInWithGoogle"
+        android:textColor="@color/black" />
 
 
     <TextView

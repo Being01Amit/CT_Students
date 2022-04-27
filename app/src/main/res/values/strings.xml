@@ -19,6 +19,7 @@
     <string name="signIn">Sign IN</string>
     <string name="OR">or continue with</string>
     <string name="RegisterYourrself">Not a member? Register now</string>
+    <string name="SignInWithGoogle">SignIn</string>
 
     <!--  menu drawer names  -->
     <string name="profile">Profile</string>
