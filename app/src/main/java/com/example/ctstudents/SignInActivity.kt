@@ -40,11 +40,10 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign)
 
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
-            .requestEmail()
-            .build()
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
+//        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//            .requestIdToken(getString(R.string.default_web_client_id))
+//            .requestEmail()
+//            .build()
 
 
         //SignIn Activity
@@ -97,7 +96,7 @@ class SignInActivity : AppCompatActivity() {
         }
 
 
-//      Creating Intent for the Recover Password here
+//      Created Intent for the Recover Password here
         recoverPassword = findViewById(R.id.txtRecoverPassword)
         recoverPassword.setOnClickListener {
             val intent = Intent(this, RecoverPassword::class.java)
@@ -106,9 +105,9 @@ class SignInActivity : AppCompatActivity() {
         }
 
 
-//      Creating Intent for Registration
+//      Created Intent for Registration
         register = findViewById(R.id.txtRegister)
-        register.setOnClickListener{
+        register.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
             finish()

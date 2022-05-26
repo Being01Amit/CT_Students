@@ -3,17 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Feed.FeedFragment"
-    android:background="@color/charyRed">
+    tools:context=".ui.Feed.FeedFragment">
 
-    <TextView
-        android:id="@+id/Fragment_Feed"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFeed"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Feed"
-        android:textAlignment="center"
-        android:textSize="30sp"
+        android:layout_height="match_parent"
+
         />
+
 
 </RelativeLayout>

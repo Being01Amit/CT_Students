@@ -8,8 +8,11 @@
         <entry key="app/src/main/res/drawable/circle.xml" value="0.3575" />
         <entry key="app/src/main/res/drawable/custom_input.xml" value="0.3225" />
         <entry key="app/src/main/res/drawable/custom_input_focus.xml" value="0.3225" />
+        <entry key="app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.336" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.298" />
         <entry key="app/src/main/res/drawable/ic_email.xml" value="0.3025" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_launcher_app_background.xml" value="0.336" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.3025" />
         <entry key="app/src/main/res/drawable/ic_phone_number.xml" value="0.3785" />
         <entry key="app/src/main/res/drawable/round_corner.xml" value="0.3025" />
@@ -27,10 +30,11 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.378125" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.378125" />
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.378125" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.378125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.378125" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.378125" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_reminder.xml" value="0.378125" />
+        <entry key="app/src/main/res/layout/item_feed_activity.xml" value="0.3338541666666667" />
         <entry key="app/src/main/res/layout/sign_in_layout.xml" value="0.378125" />
         <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.378125" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.378125" />

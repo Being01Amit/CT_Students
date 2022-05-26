@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BackGroundgray"
+    android:background="@color/white"
     tools:context=".ui.Profile.ProfileFragment">
 
     <ImageView
@@ -24,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/sans_font"
         android:text="@string/StudentName"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="30sp" />
 
     <TextView
@@ -36,77 +36,88 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/sans_font"
         android:text="@string/StudyProgram"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
 
         />
 
     <TextView
         android:id="@+id/txtUnversityNo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtStudyProgram"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/round_corner"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_student"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/sans_font"
+        android:padding="10dp"
         android:text="@string/UniversityRollNo"
-        android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:textColor="@color/black" />
+
 
     <TextView
         android:id="@+id/txtPhoneNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtStudyProgram"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/round_corner"
-        android:fontFamily="@font/sans_font"
-        android:text="@string/PhoneNo"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        />
-
-    <TextView
-        android:id="@+id/txtDepartment"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtUnversityNo"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="140dp"
-        android:fontFamily="@font/sans_font"
-        android:text="@string/Department"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-
-        />
-
-    <TextView
-        android:id="@+id/txtDegreeYear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtDepartment"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_student_phone"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/sans_font"
-        android:text="@string/DegreeYear"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:text="@string/PhoneNo"
+        android:padding="10dp"
+        android:textColor="@color/black" />
 
-        />
-
-    <TextView
-        android:id="@+id/txtStudentEmail"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtDegreeYear"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/sans_font"
-        android:text="@string/StudentEmail"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:layout_alignBottom="@+id/txtPhoneNo"
+        android:layout_marginBottom="-267dp">
+
+        <TextView
+            android:id="@+id/txtDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPhoneNo"
+            android:fontFamily="@font/sans_font"
+            android:text="@string/Department"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtDegreeYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDepartment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sans_font"
+            android:text="@string/DegreeYear"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtStudentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDegreeYear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sans_font"
+            android:text="@string/StudentEmail"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
 </RelativeLayout>
