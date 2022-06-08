@@ -8,6 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+<!--  Theme Colours  -->
+
+    <color name="DarkBlue">#303C7A</color>
+    <color name="LightBlue">#057BBF</color>
+
 <!-- Main Theme Colours   -->
 
     <color name="MainTheme">#ff1744</color>
@@ -29,7 +34,6 @@
 
 <!--   Home Fragment Colors -->
     <color name="BackGroundgray">#424242</color>
-    <color name="DarkBlue">#001E3C</color>
 
 
 

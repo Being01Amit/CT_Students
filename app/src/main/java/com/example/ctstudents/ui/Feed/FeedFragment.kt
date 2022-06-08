@@ -1,59 +1,85 @@
 package com.example.ctstudents.ui.Feed
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.android.volley.Request
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.Volley
 import com.example.ctstudents.R
+import org.json.JSONException
 
-//class FeedFragment : AppCompatActivity() {
-//
-//    lateinit var recyclerFeedFragment: LinearLayoutManager
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.fragment_feed)
-//        recyclerFeedFragment = LinearLayoutManager(this)
-//        val items = fetchData()
-//        val feedAdapter: FeedListAdapter = FeedListAdapter(items)
-//        // recyclerFeedFragment.adapter = feedAdapter
-//        var recyclerview: RecyclerView = findViewById(R.id.recyclerFeed);
-//        recyclerview.layoutManager = recyclerFeedFragment
-//        recyclerview.adapter = feedAdapter
-//    }
-//
+open class FeedFragment : Fragment(), NewsItemClick {
 
-
-
-class FeedFragment : Fragment() {
     lateinit var recyclerFeedFragment: LinearLayoutManager
+    lateinit var NewsFeed: View
+    lateinit var feedAdapter: FeedListAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        var view: View = inflater.inflate(R.layout.fragment_feed, container, false)
-        recyclerFeedFragment = LinearLayoutManager(view.context)
-        val items = fetchData()
-        val feedAdapter: FeedListAdapter = FeedListAdapter(items)
-       // recyclerFeedFragment.adapter = feedAdapter
-        var recyclerview: RecyclerView = view.findViewById(R.id.recyclerFeed);
+        NewsFeed = inflater.inflate(R.layout.fragment_feed, container, false)
+
+        recyclerFeedFragment = LinearLayoutManager(NewsFeed.context)
+        fetchData()
+        val feedAdapter =
+            FeedListAdapter(this)  // recyclerFeedFragment.adapter = feedAdapter
+        val recyclerview: RecyclerView = NewsFeed.findViewById(R.id.recycler_view)
         recyclerview.layoutManager = recyclerFeedFragment
         recyclerview.adapter = feedAdapter
-        return view
+        return NewsFeed
+
+
+//        ImgView = NewsFeed.findViewById(R.id.newsImage)
+//        requestQueue = Volley.newRequestQueue(NewsFeed.context)
+//        loadFeed()
+//        return NewsFeed
     }
 
-    private fun fetchData(): ArrayList<String> {
-        var list = ArrayList<String>()
-        for (i in 0 until 100) {
-            list.add("item $i")
+    private fun fetchData() {
+        val url =
+            ""
+        val jsonObjectRequest = JsonObjectRequest(
+            Request.Method.GET, url, null,
+
+            { response ->
+                try {
+                    val NewsJsonArray = response.getJSONArray("articles")
+                    val newsArray = ArrayList<News>()
+                    for (i in 0 until NewsJsonArray.length()) {
+                        val newsJsonObject = NewsJsonArray.getJSONObject(i)
+                        val news = News(
+                            newsJsonObject.getString("author"),
+                            newsJsonObject.getString("title"),
+                            newsJsonObject.getString("description"),
+                            newsJsonObject.getString("url"),
+                            newsJsonObject.getString("urlToImage")
+                        )
+                        newsArray.add(news)
+                    }
+
+                    feedAdapter.updateNews(newsArray)
+
+                } catch (e: JSONException) {
+                    e.printStackTrace()
+                }
+            }) { error ->
+            Log.d("Amit", "error")
         }
-        return list
-
+        MySingleton.getInstance(NewsFeed.context).addToRequestQueue(jsonObjectRequest)
     }
 
+    override fun onTtemClick(Items: News) {
+
+    }
 }
+
+
+
