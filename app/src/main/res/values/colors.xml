@@ -17,6 +17,7 @@
 
     <color name="MainTheme">#ff1744</color>
     <color name="mainThemeDark">#c4001d</color>
+    <color name="themePurple">#392D40</color>
 
 
     <!-- Sign In Layout Colours  -->
@@ -34,7 +35,4 @@
 
 <!--   Home Fragment Colors -->
     <color name="BackGroundgray">#424242</color>
-
-
-
 </resources>
