@@ -7,16 +7,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.example.ctstudents.R
+import com.google.firebase.auth.FirebaseAuth
+
+private lateinit var auth: FirebaseAuth
+
+
+lateinit var HomeFeed: View
 
 class Home : Fragment() {
-
-    lateinit var attendence: TextView
-    lateinit var assigment: TextView
-    lateinit var notes: TextView
-    lateinit var cgpa: TextView
 
 
     @SuppressLint("ResourceType")
@@ -25,13 +26,26 @@ class Home : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
-        attendence = inflater.inflate(R.id.txtAttendence, container, false) as TextView
-        attendence.setOnClickListener {
-            val intent = Intent(getActivity(), attendence::class.java)
-            getActivity()?.startActivity(intent)
-        }
-    }
+        HomeFeed = inflater.inflate(R.layout.fragment_home, container, false)
 
+        val btnattendance : TextView = HomeFeed.findViewById(R.id.txt_attendance)
+        btnattendance.setOnClickListener {
+            Toast.makeText(activity,"marks is clicked",Toast.LENGTH_LONG).show()
+            val intent = Intent(activity, marksCal::class.java)
+            startActivity(intent)
+        }
+//        auth = Firebase.auth
+        return HomeFeed
+    }
+//
+//    public override fun onStart() {
+//        super.onStart()
+//        // Check if user is signed in (non-null) and update UI accordingly.
+//        val currentUser = auth.currentUser
+//        if(currentUser == null){
+//            val intent = Intent(activity, SignInActivity::class.java)
+//            requireActivity().startActivity(intent)
+//        }
+//    }
 
 }
