@@ -35,8 +35,7 @@ android {
         viewBinding true
     }
     namespace 'com.example.ctstudents'
-
-
+    
 }
 
 dependencies {
