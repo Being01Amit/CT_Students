@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtHeading2"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="120dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_email"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etSignIn"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_lock"
@@ -94,35 +94,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtRecoverPassword"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
         android:backgroundTint="@color/SignIn"
         android:fontFamily="@font/sans_font"
         android:text="@string/signIn" />
-
-    <TextView
-        android:id="@+id/txtOR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignIn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/sans_font"
-        android:text="@string/OR"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/sign_in_button"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtOR"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/white"
-        android:gravity="end"
-        android:padding="10dp"
-        android:text="@string/SignInWithGoogle"
-        android:textColor="@color/black" />
 
 
     <TextView
