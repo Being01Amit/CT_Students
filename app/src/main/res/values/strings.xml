@@ -51,6 +51,16 @@
     <string name="cgpa">CGPA</string>
     <string name="assignments">Assignments</string>
     <string name="notes">Notes</string>
+    <string name="developer">Developer</string>
+    <string name="CTstudent">CT Student</string>
+    <string name="community">Community</string>
+
+<!-- Attendance layout   -->
+
+    <string name="AttendanceCal">Attendance \nCalculator</string>
+    <string name="theory">Theory attendance</string>
+
+
     <!--        <string name="default_web_client_id">531650521291-5p99de8hj7ca2kfksoplf1a66c4t1r6s.apps.googleusercontent.com</string>-->
 
     <!--  Profiles Fragments   -->
@@ -72,6 +82,16 @@
     <string name="default_news_description">Description</string>
     <string name="default_publisher">Publisher</string>
     <string name="default_author">Author</string>
+
+<!--   Credential Screen -->
+    <string name="EnterCredentials">Enter Your Credentials</string>
+    <string name="EnterStudyProgram">Study Program</string>
+    <string name="EnterUniversityRollNo">Enter Your University roll number</string>
+    <string name="EnterPhoneNO">Enter your Phone number</string>
+    <string name="EnterDegree">Enter your degree </string>
+    <string name="EnterDepaertment">Enter your Department</string>
+    <string name="letsGo">Lets! Go</string>
+
 
 
 
