@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtStudyProgram"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="120dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_student"
@@ -80,44 +80,45 @@
         android:layout_alignBottom="@+id/txtPhoneNo"
         android:layout_marginBottom="-267dp">
 
-        <TextView
-            android:id="@+id/txtDepartment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtPhoneNo"
-            android:fontFamily="@font/sans_font"
-            android:text="@string/Department"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-
-            />
-
-        <TextView
-            android:id="@+id/txtDegreeYear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtDepartment"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/sans_font"
-            android:text="@string/DegreeYear"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-
-            />
-
-        <TextView
-            android:id="@+id/txtStudentEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtDegreeYear"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/sans_font"
-            android:text="@string/StudentEmail"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhoneNo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/Department"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtDegreeYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDepartment"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/DegreeYear"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtStudentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDegreeYear"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sans_font"
+        android:text="@string/StudentEmail"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </RelativeLayout>
